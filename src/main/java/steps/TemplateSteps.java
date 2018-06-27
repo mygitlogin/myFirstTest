@@ -50,4 +50,6 @@ public class TemplateSteps {
         List<String> repoNamesFromResponse = gitHubSearchPageHelper.getRepoListNamesFromResponse(repositories);
         assertThat(format("список со страницы [%s] не соответствует списку из ответа сервиса [%s]", repoNamesFromPage, repoNamesFromResponse), repoNamesFromPage.toArray(), arrayContainingInAnyOrder(repoNamesFromResponse.toArray()));
     }*/
+
+
 }
