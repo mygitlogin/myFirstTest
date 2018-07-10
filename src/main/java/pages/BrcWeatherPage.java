@@ -6,7 +6,7 @@ import ru.alfabank.alfatest.cucumber.annotations.Name;
 import ru.alfabank.alfatest.cucumber.api.AkitaPage;
 
 @Name("Погода в Барселоне")
-public class BrcWeatherPage  extends AkitaPage {
+public class BrcWeatherPage extends AkitaPage {
 
     @FindBy(linkText = "Прогноз на месяц")
     @Name("Прогноз")

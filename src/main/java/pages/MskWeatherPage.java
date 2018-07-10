@@ -8,7 +8,6 @@ import ru.alfabank.alfatest.cucumber.api.AkitaPage;
 @Name("Погода в Москве")
 public class MskWeatherPage extends AkitaPage {
 
-//    @FindBy(css = "#lst-ib")
     @FindBy(id = "header2input")
     @Name("Город или район")
     public SelenideElement searchField;

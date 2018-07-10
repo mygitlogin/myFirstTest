@@ -12,4 +12,5 @@ public class MounthForecastPage extends AkitaPage {
     @Name("Июнь")
     public SelenideElement searchField;
 
+
 }

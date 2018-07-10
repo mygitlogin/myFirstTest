@@ -22,7 +22,7 @@ public class minTemp {
         List<Integer> elementsText = new ArrayList<Integer>();
 
         SelenideElement firstElement = listOfElementsFromPage.get(0);
-        waitWhileAnimationPlay(firstElement);
+//        waitWhileAnimationPlay(firstElement);
 
         int minValue = getTempFromElement(firstElement);
         int dayNumber = 1;
