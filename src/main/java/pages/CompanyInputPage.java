@@ -22,7 +22,7 @@ public class CompanyInputPage  extends AkitaPage {
     @Name("Руководитель")
     private SelenideElement director;
 
-    @FindBy(xpath = "//*[@id=\"react-app\"]/div/div[2]/div[2]/div/div/div[2]/div/div/form/div[1]/div[3]/div[2]/span/span/span/span[2]/input")
+    @FindBy(css ="#react-app > div > div.page__content.page__content_offset > div.content.content_theme_alfa-on-white > div > div > div.ona__page > div > div > form > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > span > span > span > span > span.input__box > input")
     @Name("Дата регистрации")
     private SelenideElement registrationDate;
 
@@ -35,14 +35,16 @@ public class CompanyInputPage  extends AkitaPage {
     @Name("Телефон")
     private SelenideElement companyPhone;
 
-    @FindBy(css = ".spin-button__span-text")
+    @FindBy(css = ".button__text")
     @Name("Далее")
     private SelenideElement buttonNext;
 
-    @FindBy(xpath = "//*[@id=\"react-app\"]/div/div[2]/div[2]/div/div/div[2]/div/div/form/div[3]/div[1]/div[1]/div/span/span/span[2]/input")
+    @FindBy(css="#react-app > div > div.page__content.page__content_offset > div.content.content_theme_alfa-on-white > div > div > div.ona__page > div > div > form > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div > span > span > span.input__box > input")
     @Name("Город обслуживания")
     private SelenideElement city;
 
-
+    @FindBy(css="#react-app > div > div.page__content.page__content_offset > div.content.content_theme_alfa-on-white > div > div > div.ona__page > div > div > form > div:nth-child(4) > div > div > div > div > div > label:nth-child(1)")
+    @Name("Оформить")
+    private SelenideElement oformit;
 
 }

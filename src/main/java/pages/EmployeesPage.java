@@ -10,11 +10,11 @@ import ru.alfabank.alfatest.cucumber.annotations.Optional;
 
 public class EmployeesPage  extends AkitaPage {
 
-    @FindBy(xpath = "//*[@id=\"react-app\"]/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div/div/div/div/div[2]/div/div[1]/span/span/span[2]/input")
+    @FindBy(css="input[name$=\".lastName\"]")
     @Name("Фамилия")
     private SelenideElement empSurname;
 
-    @FindBy(xpath = "//*[@id=\"react-app\"]/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/span/span/span[2]/input")
+    @FindBy(css="input[name$=\".firstName\"]")
     @Name("Имя")
     private SelenideElement empName;
 
@@ -63,7 +63,7 @@ public class EmployeesPage  extends AkitaPage {
     private SelenideElement saveButton;
 
     @Optional
-    @FindBy(css = ".spin-button__span-text")
+    @FindBy(css = ".authorized-persons-form__submit-btn button[type=\"submit\"]")
     @Name("Далее")
     private SelenideElement buttonNext;
 

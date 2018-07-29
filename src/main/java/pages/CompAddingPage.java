@@ -8,7 +8,9 @@ import ru.alfabank.alfatest.cucumber.api.AkitaPage;
 @Name("Добавление компании")
 public class CompAddingPage extends AkitaPage{
 
-    @FindBy(xpath = "//*[@id=\"react-app\"]/div/div[2]/div[2]/div/div/div/button[1]/span")
-    @Name("Открытие счета")
-    private SelenideElement onaButton;
+
+
+    @FindBy(css = "#react-app > div > div.page__content.page__content_offset > div.content.content_theme_alfa-on-white > div > div > div:nth-child(2) > button")
+    @Name("Добавить новую")
+    private SelenideElement addButton;
 }
