@@ -1,4 +1,4 @@
-package pages;
+package pages.Yandex;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,4 +12,16 @@ public class YandexPage extends AkitaPage {
     @FindBy(linkText = "Погода")
     @Name("Погода")
     public SelenideElement searchField;
+
+    @FindBy(css = "a[data-id=\"market\"]")
+    @Name("Маркет")
+    public SelenideElement menuMarket;
+
+    @FindBy(css = "input[aria-label=\"Запрос\"]")
+    @Name("Запрос")
+    public SelenideElement search;
+
+    @FindBy(css = ".search2__button")
+    @Name("Найти")
+    public SelenideElement searchButton;
 }

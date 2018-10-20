@@ -1,21 +1,15 @@
-package pages;
+package pages.Yandex;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
 import ru.alfabank.alfatest.cucumber.annotations.Name;
 import ru.alfabank.alfatest.cucumber.api.AkitaPage;
 
-@Name("Погода в Москве")
-public class MskWeatherPage extends AkitaPage {
+@Name("Температура на месяц")
+public class MounthForecastPage extends AkitaPage {
 
-//    @FindBy(css = "#lst-ib")
-    @FindBy(id = "header2input")
-    @Name("Город или район")
+    @FindBy(linkText = "Июнь")
+    @Name("Июнь")
     public SelenideElement searchField;
 
-
 }
-
-
-
-

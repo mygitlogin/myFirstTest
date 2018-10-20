@@ -1,4 +1,4 @@
-package pages;
+package pages.AO;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,14 +8,17 @@ import ru.alfabank.alfatest.cucumber.api.AkitaPage;
 
 @Name("Документы")
 public class FilesPage extends AkitaPage {
+ @Optional
    @FindBy(css = "body > input[type=\"file\"]:nth-of-type(1)")
     @Name("Паспорт")
     private SelenideElement passButton;
 
+ @Optional
    @FindBy(css="body > input[type=\"file\"]:nth-of-type(2)")
     @Name("Устав")
     private SelenideElement ustButton;
 
+ @Optional
     @FindBy(css="body > input[type=\"file\"]:nth-of-type(3)")
     @Name("Протокол")
     private SelenideElement prtButton;

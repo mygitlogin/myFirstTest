@@ -1,4 +1,4 @@
-package pages;
+package pages.Yandex;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
